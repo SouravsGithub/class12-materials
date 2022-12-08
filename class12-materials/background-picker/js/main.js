@@ -14,6 +14,7 @@ function showNaruto(event) {
   document.querySelector("body").style.backgroundRepeat = "no-repeat";
   document.querySelector("body").style.backgroundPosition = "center";
   nameOfCharacter.innerText = "NARUTO";
+  document.querySelector("body").style.animation = "appear 5s linear infiite";
 }
 function showSasuke(event) {
   document.querySelector("body").style.background =
