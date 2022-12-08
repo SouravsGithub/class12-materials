@@ -1,6 +1,7 @@
 const naruto = document.querySelector(".naruto");
 const sasuke = document.querySelector(".sasuke");
 const itachi = document.querySelector(".itachi");
+const nameOfCharacter = document.querySelector("h1");
 
 naruto.addEventListener("click", showNaruto);
 sasuke.addEventListener("click", showSasuke);
@@ -12,6 +13,7 @@ function showNaruto(event) {
   document.querySelector("body").style.backgroundSize = "cover";
   document.querySelector("body").style.backgroundRepeat = "no-repeat";
   document.querySelector("body").style.backgroundPosition = "center";
+  nameOfCharacter.innerText = "NARUTO";
 }
 function showSasuke(event) {
   document.querySelector("body").style.background =
@@ -19,6 +21,7 @@ function showSasuke(event) {
   document.querySelector("body").style.backgroundSize = "cover";
   document.querySelector("body").style.backgroundRepeat = "no-repeat";
   document.querySelector("body").style.backgroundPosition = "bottom";
+  nameOfCharacter.innerText = "SASUKE";
 }
 function showItachi(event) {
   document.querySelector("body").style.background =
@@ -26,4 +29,5 @@ function showItachi(event) {
   document.querySelector("body").style.backgroundSize = "cover";
   document.querySelector("body").style.backgroundRepeat = "no-repeat";
   document.querySelector("body").style.backgroundPosition = "center";
+  nameOfCharacter.innerText = "ITACHI";
 }

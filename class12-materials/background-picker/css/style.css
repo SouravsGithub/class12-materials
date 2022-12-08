@@ -18,14 +18,23 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+h1 {
+  position: absolute;
+  top: 65%;
+  left: 3%;
+  color: white;
+  background: red;
+  padding: 0.8rem 3rem;
+  font-style: italic;
+  transform: skewX(-20deg);
+}
 ul {
-  height: 100vh;
+  height: 90vh;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   width: 25%;
-  padding-bottom: 3%;
 }
 ul li img {
   width: 100px;
