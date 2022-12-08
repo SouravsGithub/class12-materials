@@ -1,0 +1,38 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: url(https://www.nawpic.com/media/2020/naruto-4k-nawpic-11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ul {
+  height: 100vh;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 25%;
+  padding-bottom: 3%;
+}
+ul li img {
+  width: 100px;
+  height: 80px;
+  border-radius: 20px;
+  border: 6px solid rgb(181, 0, 0);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
