@@ -19,20 +19,43 @@ body {
   background-position: center;
   transition: all 0.5s linear;
 }
+.left {
+  height: 65px;
+  width: 1rem;
+  display: inline-block;
+  background: red;
+  position: absolute;
+  top: 72%;
+  left: 1.8%;
+  transform: skewX(-20deg);
+}
+.under {
+  height: 14px;
+  width: 10rem;
+  background: red;
+  display: inline-block;
+  position: absolute;
+  top: 79%;
+  left: 2%;
+  transform: skewX(-20deg);
+}
 h1 {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 3%;
-  color: white;
-  background: red;
-  padding: 0.8rem 3rem;
-  letter-spacing: 1px;
+  color: red;
+  background: white;
+  padding: 0.7rem 2rem;
+  padding-right: 3rem;
+  letter-spacing: 2px;
   font-style: italic;
   transform: skewX(-20deg);
   transition: all 0.5s linear;
+  font-size: 1.5rem;
+  border: 1px solid red;
 }
 ul {
-  height: 90vh;
+  height: 95vh;
   list-style: none;
   display: flex;
   justify-content: space-between;
