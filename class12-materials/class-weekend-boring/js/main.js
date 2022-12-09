@@ -1,15 +1,33 @@
-document.querySelector("#check").addEventListener("click", check);
-const output = document.querySelector("#placeToSee");
-
-function check() {
-  const day = document.querySelector("#day").value.toLowerCase();
-
-  //Conditionals go here
-  if (day === "tuesday" || day === "thursday") {
-    output.innerText = "Class Day";
-  } else if (day === "sunday" || day === "saturday") {
-    output.innerText = "Weekend";
-  } else {
-    output.innerText = "Boring!!!";
+const input = document.querySelector("#day");
+const btn = document.querySelector("#check");
+btn.addEventListener("click", () => {
+  const value = input.value.toLowerCase();
+  switch (value) {
+    case "tuesday":
+      console.log("Hey, It's class day!");
+      break;
+    case "thursday":
+      console.log("Hey, It's class day!");
+      break;
+    case "saturday":
+      console.log("Hurrayyy.... It's the weekend :)");
+      break;
+    case "sunday":
+      console.log("Hurrayyy.... It's the weekend :)");
+      break;
+    default:
+      console.log("BORING!!!!");
   }
-}
+
+  // The same thing with if else statements
+
+  /*
+  if (value === "tuesday" || value === "thursday") {
+    console.log("Hey, It's class day!");
+  } else if (value === "saturday" || value === "sunday") {
+    console.log("Hurrayyy.... It's the weekend :)");
+  } else {
+    console.log("BORING!!!!");
+  }
+  */
+});
